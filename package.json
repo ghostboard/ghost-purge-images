@@ -2,7 +2,7 @@
   "private": false,
   "name": "ghost-purge-images",
   "description": "",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "author": {
     "name": "David",
     "email": "support+github@ghostboard.io"
