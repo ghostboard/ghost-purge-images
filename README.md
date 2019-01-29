@@ -28,8 +28,8 @@ Print the list of all uploaded images that currently are not being used in any p
 
 ![ghost-purge-images display screenshot](https://user-images.githubusercontent.com/1589874/51084812-80e6f700-1730-11e9-96c4-4e106e4c7c63.png)
 
-### purge
-WARNING: Avoid issues taking a backup before run `purge` command
+### `ghost-purge-images purge`
+WARNING: Take a backup before run this
 
 Delete all the unused files.
 `ghost-purge-images purge key=YOUR_KEY`
@@ -47,3 +47,6 @@ Delete all the unused files.
 
 ## 👋 Credits
 David Burgos from [Ghostboard.io](https://ghostboard.io)
+
+## License
+See LICENSE file
