@@ -10,8 +10,8 @@ module.exports = {
           uploads(cb) {
             ghost.uploads.list(cb);
           },
-          stories(cb) {
-            ghost.stories.fetch(cb);
+          content(cb) {
+            ghost.content.fetch(cb);
           }
         }, callback);
       },
@@ -25,7 +25,7 @@ module.exports = {
       if (err) {
         console.log(`❌ Error: ${err}`);
       }
-      return process.exit(-1);
+      return process.exit(0);
     });
   }
 };

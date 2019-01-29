@@ -9,9 +9,9 @@ const purge = require('../purge.js');
 const hasCommand = argv && argv.length > 0;
 if (!hasCommand) {
   console.log('Please provide a command, check the docs');
-  process.exit(1);
+  process.exit(0);
 }
-const command = argv[0];
+const [command] = argv;
 
 switch (command) {
   case 'purge':
@@ -22,6 +22,6 @@ switch (command) {
     break;
   default:
     console.log(`Command '${command}' not found, check the docs and try again`);
-    process.exit(1);
+    process.exit(0);
     break;
 }
