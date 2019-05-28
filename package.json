@@ -2,7 +2,7 @@
   "private": false,
   "name": "ghost-purge-images",
   "description": "",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "author": {
     "name": "David",
     "email": "support+github@ghostboard.io"
@@ -15,7 +15,8 @@
   "preferGlobal": true,
   "scripts": {
     "display": "node display.js;",
-    "purge": "node purge.js;"
+    "purge": "node purge.js;",
+    "test": "mocha tests --recursive --reporter spec --timeout 10000"
   },
   "main": "./bin/display.js",
   "bin": {
@@ -23,6 +24,8 @@
   },
   "dependencies": {
     "async": "^2.6.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
     "moment": "^2.24.0",
     "request": "^2.88.0"
   },
