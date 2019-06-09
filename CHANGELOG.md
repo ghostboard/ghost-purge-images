@@ -1,14 +1,14 @@
 # 📋 Changelog
 ## v2.1.0
-- Add Admin API support to handle images in drafts (post/pages) (issue #2)
+- Add Admin API support to handle images in drafts (post/pages) ([issue #2](https://github.com/ghostboard/ghost-purge-images/issues/2))
 - Add CHANGELOG
 - Improve README
 
 ## 2.0.3
 - Update dependencies and minor improvements
 
-## 2.0.2
-- Fix slash bug (issue #1)
+## 2.0.2
+- Fix slash bug ([issue #1](https://github.com/ghostboard/ghost-purge-images/issues/1))
 
 ## 2.0.1
 - Improve README

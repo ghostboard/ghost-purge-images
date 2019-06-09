@@ -9,7 +9,7 @@ Which Ghost version are you running?
 
 ⚠️ Note: images in drafts (both posts/pages) will be removed too if you are not running **Ghost v2.16 or newer**
 
-💡 Why? Drafts are only available in [Ghost Admin API](https://docs.ghost.org/api/admin/) included in **Ghost 2.16**
+Why? Drafts are only available in [Ghost Admin API](https://docs.ghost.org/api/admin/) included in **Ghost 2.16**
 
 ## 🎁 Install & update
 In your blog server, login via ssh and run:
