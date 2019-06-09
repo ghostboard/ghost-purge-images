@@ -1,4 +1,7 @@
 # 📋 Changelog
+## v2.1.1
+- Fix hyphen param issue
+
 ## v2.1.0
 - Add Admin API support to handle images in drafts (post/pages) ([issue #2](https://github.com/ghostboard/ghost-purge-images/issues/2))
 - Add CHANGELOG
