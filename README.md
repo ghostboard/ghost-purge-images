@@ -52,6 +52,13 @@ Delete all the unused files.
 
 ![ghost-purge-images purge screenshot](https://user-images.githubusercontent.com/1589874/51084808-73ca0800-1730-11e9-8c2a-a3b43551fbaa.png)
 
+## 🎯 Troubleshotting
+
+### Error: EACCES: permission denied, unlink ANY_FILE_PATH
+Permissions issue on your server, try to run in your Ghost folder:
+
+`sudo chmod -R a+rw content`
+
 ## 📋 Changelog
 See [CHANGELOG.md](https://github.com/ghostboard/ghost-purge-images/blob/master/CHANGELOG.md)
 
