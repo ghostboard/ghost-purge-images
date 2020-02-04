@@ -13,15 +13,19 @@ describe('lib/ghost/uploads', () => {
     });
 
     it('should return an array with path and size', async () => {
-      return Uploads.list('tests')
-        .then((data) => {
-          expect(typeof data === 'object').to.equal(true);
-          expect(data.length).to.be.an('number');
-          expect(data[0]).to.have.property('path');
-          expect(data[0]).to.have.property('size');
-        }).catch((err) => {
-          throw new Error(err);
-        });
+      let error;
+      let output;
+      try {
+        output = await Uploads.list('tests');
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(typeof output === 'object').to.equal(true);
+        expect(output.length).to.be.an('number');
+        expect(output[0]).to.have.property('path');
+        expect(output[0]).to.have.property('size');
+      }
     });
   });
 
