@@ -3,7 +3,8 @@ Display or clean unused uploaded images of your Ghost blog
 
 ## 👻 Ghost versions
 Which Ghost version are you running?
-- Ghost +v2.16 👉 `npm install -g ghost-purge-images`
+- Ghost v3 👉 `npm install -g ghost-purge-images`
+- Ghost v2 +v2.16 👉 `npm install -g ghost-purge-images@2.1.1`
 - Ghost v2 - v2.15.x 👉 `npm install -g ghost-purge-images@2.0.3`
 - Ghost v0.7.2 - v1.x 👉 `npm install -g ghost-purge-images@1.0.0`
 
@@ -11,7 +12,7 @@ Which Ghost version are you running?
 
 Why? Drafts are only available in [Ghost Admin API](https://docs.ghost.org/api/admin/) included in **Ghost 2.16**
 
-## 🎁 Install & update
+## 🎁 Update to the last version
 In your blog server, login via ssh and run:
 
 `npm install -g ghost-purge-images`
