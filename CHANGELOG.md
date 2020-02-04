@@ -1,4 +1,10 @@
 # 📋 Changelog
+## v3.0.0
+- Add support to Ghost Content API v3
+- Refactor callbacks to async/await
+- Added some tests
+- Reduce dependencies
+
 ## v2.1.1
 - Fix hyphen param issue
 
