@@ -1,31 +1,20 @@
-const async = require('async');
 const ghost = require('./lib/ghost');
 const core = require('./lib/core');
 
-module.exports = {
-  run() {
-    async.waterfall([
-      function(callback) {
-        async.parallel({
-          uploads(cb) {
-            ghost.uploads.list(cb);
-          },
-          content(cb) {
-            ghost.content.fetch(cb);
-          }
-        }, callback);
-      },
-      function(out, callback) {
-        core.filterUnused(out, callback);
-      },
-      function(out, callback) {
-        core.display(out, callback);
-      }
-    ], (err, out) => {
-      if (err) {
-        console.log(`❌ Error: ${err}`);
-      }
-      return process.exit(0);
-    });
+async function run() {
+  try {
+    const input = {
+      uploads: await ghost.uploads.list(),
+      content: await ghost.content.fetch()
+    };
+    const unused = core.filterUnused(input);
+    core.display(unused);
+    return process.exit(0);
+  } catch (err) {
+    console.log(`❌ Error: ${err}`);
   }
+}
+
+module.exports = {
+  run
 };
