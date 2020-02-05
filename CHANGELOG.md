@@ -1,4 +1,12 @@
 # 📋 Changelog
+## v3.0.2
+- Fix & recovery Ghost Admin API
+
+## v3.0.1
+- Update node & npm versions
+- Move chai & mocha to devDependencies
+- Remove auth.js 🐛
+
 ## v3.0.0
 - Add support to Ghost Content API v3
 - Refactor callbacks to async/await
