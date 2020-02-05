@@ -23,6 +23,7 @@
     "ghost-purge-images": "./bin/ghost-purge-images.js"
   },
   "dependencies": {
+    "jsonwebtoken": "^8.5.1",
     "request": "^2.88.0"
   },
   "devDependencies": {
