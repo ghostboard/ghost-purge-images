@@ -1,4 +1,7 @@
 # 📋 Changelog
+## v3.0.3
+- Add minimist to dependencies
+
 ## v3.0.2
 - Fix & recovery Ghost Admin API
 
