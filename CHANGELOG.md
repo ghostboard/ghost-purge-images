@@ -1,4 +1,9 @@
 # 📋 Changelog
+
+## v3.0.4
+
+- Fix upload path to check isBeingUsed & update tests
+
 ## v3.0.3
 - Add minimist to dependencies
 

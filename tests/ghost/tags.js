@@ -20,7 +20,7 @@ describe('lib/ghost/tags', () => {
           { feature_image: '/uploads/same_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Tags.isBeingUsed(upload, tags);
       } catch (err) {
@@ -39,7 +39,7 @@ describe('lib/ghost/tags', () => {
           { feature_image: '/uploads/old_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Tags.isBeingUsed(upload, tags);
       } catch (err) {

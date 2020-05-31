@@ -20,7 +20,7 @@ describe('lib/ghost/settings', () => {
           logo: '/uploads/same_image.jpg'
         };
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Settings.isBeingUsed(upload, settings);
       } catch (err) {
@@ -39,7 +39,7 @@ describe('lib/ghost/settings', () => {
           logo: '/uploads/old_image.jpg'
         };
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Settings.isBeingUsed(upload, settings);
       } catch (err) {
@@ -58,7 +58,7 @@ describe('lib/ghost/settings', () => {
           cover_image: '/uploads/same_image.jpg'
         };
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Settings.isBeingUsed(upload, settings);
       } catch (err) {
@@ -77,7 +77,7 @@ describe('lib/ghost/settings', () => {
           cover_image: '/uploads/old_image.jpg'
         };
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Settings.isBeingUsed(upload, settings);
       } catch (err) {
