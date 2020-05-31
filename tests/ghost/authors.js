@@ -20,7 +20,7 @@ describe('lib/ghost/authors', () => {
           { profile_image: '/uploads/same_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Authors.isBeingUsed(upload, authors);
       } catch (err) {
@@ -39,7 +39,7 @@ describe('lib/ghost/authors', () => {
           { profile_image: '/uploads/old_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Authors.isBeingUsed(upload, authors);
       } catch (err) {
@@ -58,7 +58,7 @@ describe('lib/ghost/authors', () => {
           { cover_image: '/uploads/same_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Authors.isBeingUsed(upload, authors);
       } catch (err) {
@@ -77,7 +77,7 @@ describe('lib/ghost/authors', () => {
           { cover_image: '/uploads/old_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Authors.isBeingUsed(upload, authors);
       } catch (err) {

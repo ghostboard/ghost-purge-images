@@ -39,7 +39,7 @@ describe('lib/ghost/posts', () => {
           { feature_image: '/uploads/same_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -58,7 +58,7 @@ describe('lib/ghost/posts', () => {
           { og_image: '/uploads/same_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -77,7 +77,7 @@ describe('lib/ghost/posts', () => {
           { twitter_image: '/uploads/same_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -96,7 +96,7 @@ describe('lib/ghost/posts', () => {
           { html: '<img src="/uploads/old_image.jpg" />' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -115,7 +115,7 @@ describe('lib/ghost/posts', () => {
           { feature_image: '/uploads/old_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -134,7 +134,7 @@ describe('lib/ghost/posts', () => {
           { og_image: '/uploads/old_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -153,7 +153,7 @@ describe('lib/ghost/posts', () => {
           { twitter_image: '/uploads/old_image.jpg' }
         ];
         const upload = {
-          path: 'same_image.jpg'
+          path: 'content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
