@@ -87,6 +87,120 @@ describe('lib/ghost/settings', () => {
         expect(output).to.equal(false);
       }
     });
+
+    it('should return TRUE when is used as publication icon', () => {
+      let error;
+      let output;
+      try {
+        const settings = {
+          icon: '/uploads/same_image.jpg'
+        };
+        const upload = {
+          path: 'content/images/same_image.jpg'
+        };
+        output = Settings.isBeingUsed(upload, settings);
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(output).to.equal(true);
+      }
+    });
+
+    it('should return FALSE when is not used as publication icon', () => {
+      let error;
+      let output;
+      try {
+        const settings = {
+          icon: '/uploads/old_image.jpg'
+        };
+        const upload = {
+          path: 'content/images/same_image.jpg'
+        };
+        output = Settings.isBeingUsed(upload, settings);
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(output).to.equal(false);
+      }
+    });
+
+    it('should return TRUE when is used as Twitter image', () => {
+      let error;
+      let output;
+      try {
+        const settings = {
+          twitter_image: '/uploads/same_image.jpg'
+        };
+        const upload = {
+          path: 'content/images/same_image.jpg'
+        };
+        output = Settings.isBeingUsed(upload, settings);
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(output).to.equal(true);
+      }
+    });
+
+    it('should return FALSE when is not used as Twitter image', () => {
+      let error;
+      let output;
+      try {
+        const settings = {
+          twitter_image: '/uploads/old_image.jpg'
+        };
+        const upload = {
+          path: 'content/images/same_image.jpg'
+        };
+        output = Settings.isBeingUsed(upload, settings);
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(output).to.equal(false);
+      }
+    });
+
+    it('should return TRUE when is used as Facebook image', () => {
+      let error;
+      let output;
+      try {
+        const settings = {
+          og_image: '/uploads/same_image.jpg'
+        };
+        const upload = {
+          path: 'content/images/same_image.jpg'
+        };
+        output = Settings.isBeingUsed(upload, settings);
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(output).to.equal(true);
+      }
+    });
+
+    it('should return FALSE when is not used as Facebook image', () => {
+      let error;
+      let output;
+      try {
+        const settings = {
+          og_image: '/uploads/old_image.jpg'
+        };
+        const upload = {
+          path: 'content/images/same_image.jpg'
+        };
+        output = Settings.isBeingUsed(upload, settings);
+      } catch (err) {
+        error = err;
+      } finally {
+        expect(error).to.be.undefined;
+        expect(output).to.equal(false);
+      }
+    });
   });
 
   describe('list()', () => {
