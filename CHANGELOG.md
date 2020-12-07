@@ -1,5 +1,9 @@
 # 📋 Changelog
 
+## v3.0.5
+
+- Add support for publication icon, Twitter & Facebook images #17 #20
+
 ## v3.0.4
 
 - Fix upload path to check isBeingUsed & update tests
