@@ -17,7 +17,7 @@ In your blog server, login via ssh and run:
 
 ## 🤓 Observations
 
-- Due [Content & Admin API](https://ghost.org/docs/api/v3/content/#resources), some images associated to the next resouces could be removed:
+- Due [Content & Admin API](https://ghost.org/docs/api/v3/content/#resources), some ==images associated to the next resouces will be removed==:
     - **Authors with zero published posts**
     - **Tags that are not associated with a post**
     - **Drafts** (both posts/pages) will be removed too if you are not running **Ghost v2.16 or newer** 
