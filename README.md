@@ -8,16 +8,22 @@ Which Ghost version are you running?
 - Ghost v2 - v2.15.x 👉 `npm install -g ghost-purge-images@2.0.3`
 - Ghost v0.7.2 - v1.x 👉 `npm install -g ghost-purge-images@1.0.0`
 
-⚠️ Note: images in drafts (both posts/pages) will be removed too if you are not running **Ghost v2.16 or newer**
-
-Why? Drafts are only available in [Ghost Admin API](https://docs.ghost.org/api/admin/) included in **Ghost 2.16**
-
 ## 🎁 Update to the last version
 In your blog server, login via ssh and run:
 
 `npm install -g ghost-purge-images`
 
-✅ This command will install or update `ghost-purge-images` globally in your server, it doesn't matter in which folder you run it 
+💡 This command will install or update `ghost-purge-images` globally in your server, it doesn't matter in which folder you run it 
+
+## 🤓 Observations
+
+- Due [Content & Admin API](https://ghost.org/docs/api/v3/content/#resources), some images associated to the next resouces could be removed:
+    - **Authors with zero published posts**
+    - **Tags that are not associated with a post**
+    - **Drafts** (both posts/pages) will be removed too if you are not running **Ghost v2.16 or newer** 
+    
+        💡 Why? Drafts are only available in [Ghost Admin API](https://docs.ghost.org/api/admin/) included in **Ghost 2.16**
+- Backup your content folder first!
 
 ## 🔑 Keys
 This tool use:
