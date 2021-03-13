@@ -59,6 +59,8 @@ Delete all the unused files.
 
 ![ghost-purge-images purge screenshot](https://user-images.githubusercontent.com/1589874/51084808-73ca0800-1730-11e9-8c2a-a3b43551fbaa.png)
 
+💡 The **default images path** is `content/images`, you can it with the optional param `--image-path=your/custom/path/here`
+
 ## 🎯 Troubleshotting
 
 ### Error: EACCES: permission denied, unlink ANY_FILE_PATH
@@ -71,6 +73,9 @@ See [CHANGELOG.md](https://github.com/ghostboard/ghost-purge-images/blob/master/
 
 ## 👋 Credits
 David Burgos from [Ghostboard.io](https://ghostboard.io)
+
+## 👏 Contributors
+- [mesquka](https://github.com/mesquka/ghost-purge-images-customdir/commits?author=mesquka)
 
 ## ✒️ License
 See LICENSE file
