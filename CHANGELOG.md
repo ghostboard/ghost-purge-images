@@ -1,5 +1,9 @@
 # 📋 Changelog
 
+## v3.1.0
+
+- Add optional images-path param by mesquka #18
+
 ## v3.0.5
 
 - Add support for publication icon, Twitter & Facebook images #17 #20
