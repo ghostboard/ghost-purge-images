@@ -1,5 +1,9 @@
 # 📋 Changelog
 
+## v3.1.1
+
+- Bumps y18n to 4.0.1
+
 ## v3.1.0
 
 - Add optional images-path param by mesquka #18
