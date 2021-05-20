@@ -1,5 +1,9 @@
 # 📋 Changelog
 
+## v3.1.2
+
+- Bumps internal dependencies (lodash & hosted-git-info)
+
 ## v3.1.1
 
 - Bumps y18n to 4.0.1
