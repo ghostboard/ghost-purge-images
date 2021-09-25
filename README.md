@@ -1,14 +1,18 @@
 # ghost-purge-images
+
 Display or clean unused uploaded images of your Ghost blog
 
 ## 👻 Ghost versions
+
 Which Ghost version are you running?
-- Ghost v3 👉 `npm install -g ghost-purge-images`
+
+- Ghost v3, v4 👉 `npm install -g ghost-purge-images`
 - Ghost v2 +v2.16 👉 `npm install -g ghost-purge-images@2.1.1`
 - Ghost v2 - v2.15.x 👉 `npm install -g ghost-purge-images@2.0.3`
 - Ghost v0.7.2 - v1.x 👉 `npm install -g ghost-purge-images@1.0.0`
 
 ## 🎁 Update to the last version
+
 In your blog server, login via ssh and run:
 
 `npm install -g ghost-purge-images`
@@ -26,6 +30,7 @@ In your blog server, login via ssh and run:
 - Backup your content folder first!
 
 ## 🔑 Keys
+
 This tool use:
 - [Ghost Content API](https://docs.ghost.org/api/content/) for check authors & tags
 - [Ghost Admin API](https://docs.ghost.org/api/admin/) for check posts & pages, including drafts
@@ -38,6 +43,7 @@ Get the keys following this steps:
 💡 Need help? Check this [step-by-step guide to create them](https://ghostboard.io/blog/how-to-integrate-ghostboard-with-ghost-content-api/)
 
 ## 🚀 Execute
+
 Login into your server via ssh:
 - Where you have installed Ghost, usually:
 
