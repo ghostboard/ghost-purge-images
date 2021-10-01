@@ -1,5 +1,10 @@
 # 📋 Changelog
 
+## v3.1.3
+
+- Replace request (deprecated) to axios
+- Added more tests
+  
 ## v3.1.2
 
 - Bumps internal dependencies (lodash & hosted-git-info)
