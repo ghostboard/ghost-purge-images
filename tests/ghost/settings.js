@@ -207,5 +207,29 @@ describe('lib/ghost/settings', () => {
     it('is available', () => {
       expect(Settings.list).to.be.an('function');
     });
+
+    if (process.env.TEST_BASE_URL) {
+      it('should get the settings list', async () => {
+        let error;
+        let output;
+        try {
+          const input = {
+            url: process.env.TEST_BASE_URL,
+            contentAPIKey: process.env.TEST_CONTENT_API_KEY
+          };
+          output = await Settings.list(input);
+        } catch (err) {
+          error = err;
+        } finally {
+          expect(error).to.be.undefined;
+          expect(output).to.be.an('object');
+          expect(output).to.be.have.property('logo');
+          expect(output).to.be.have.property('icon');
+          expect(output).to.be.have.property('cover_image');
+          expect(output).to.be.have.property('og_image');
+          expect(output).to.be.have.property('twitter_image');
+        }
+      });
+    }
   });
 });
