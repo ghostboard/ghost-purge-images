@@ -53,21 +53,34 @@ Login into your server via ssh:
 `ghost-purge-images display --content-key=YOUR_CONTENT_KEY --admin-key=YOUR_ADMIN_KEY`
 
 ## ⚡️ Commands
-### `ghost-purge-images display --content-key=YOUR_CONTENT_KEY --admin-key=YOUR_ADMIN_KEY`
+### `display`
+
 Print the list of all uploaded images that currently are not being used in any post, page or metadata
+
+- Example: `ghost-purge-images display --content-key=YOUR_CONTENT_KEY --admin-key=YOUR_ADMIN_KEY`
+
 
 ![ghost-purge-images display screenshot](https://user-images.githubusercontent.com/1589874/51084812-80e6f700-1730-11e9-96c4-4e106e4c7c63.png)
 
-### `ghost-purge-images purge --content-key=YOUR_CONTENT_KEY --admin-key=YOUR_ADMIN_KEY`
-WARNING: Take a backup before run this
+### `purge`
 
 Delete all the unused files.
 
+⚠️ WARNING: Take a backup before run this
+
+- Example: `ghost-purge-images purge --content-key=YOUR_CONTENT_KEY --admin-key=YOUR_ADMIN_KEY`
+
 ![ghost-purge-images purge screenshot](https://user-images.githubusercontent.com/1589874/51084808-73ca0800-1730-11e9-8c2a-a3b43551fbaa.png)
 
-💡 The **default images path** is `content/images`, you can it with the optional param `--image-path=your/custom/path/here`
+## 🧩 Optional Params
 
-## 🎯 Troubleshotting
+- ### `images-path`
+
+💡 The **default images path** is `content/images`
+
+You can change it with the optional param `... --images-path=your/custom/path/here`
+
+## 🎯 Troubleshooting
 
 ### Error: EACCES: permission denied, unlink ANY_FILE_PATH
 Permissions issue on your server, try to run in your Ghost folder:
