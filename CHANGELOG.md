@@ -1,5 +1,10 @@
 # 📋 Changelog
 
+## v3.1.4
+
+- Add optional param url
+- Improve documentation
+
 ## v3.1.3
 
 - Replace request (deprecated) to axios
