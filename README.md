@@ -74,6 +74,12 @@ Delete all the unused files.
 
 ## 🧩 Optional Params
 
+- ### `url`
+
+💡 By default, the URL in **config.production.json** will be used. This may be useful for Docker or custom configurations
+
+Example: `... --url=https://yourblog.com/`
+
 - ### `images-path`
 
 💡 The **default images path** is `content/images`
