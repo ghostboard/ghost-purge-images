@@ -1,5 +1,12 @@
 # 📋 Changelog
 
+## v3.2.0
+
+- Add support for audio & video card files #31
+- Add media-path param
+- Refactor to improve performance up to 15%
+- Update all dependencies
+
 ## v3.1.4
 
 - Add optional param url
