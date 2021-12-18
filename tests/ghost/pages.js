@@ -1,3 +1,4 @@
+require('dotenv').config();
 const expect = require('chai').expect;
 const auth = require('../../lib/ghost/auth');
 const Pages = require('../../lib/ghost/pages');

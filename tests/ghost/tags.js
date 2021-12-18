@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const expect = require('chai').expect;
 const Tags = require('../../lib/ghost/tags');
 
@@ -72,8 +72,10 @@ describe('lib/ghost/tags', () => {
         } finally {
           expect(error).to.be.undefined;
           expect(output).to.be.an('array');
-          expect(output.length).to.be.greaterThan(0);
-          expect(output[0]).to.be.have.property('feature_image');
+          expect(output.length).to.be.at.least(0);
+          if (output.length) {
+            expect(output[0]).to.be.have.property('feature_image');
+          }
         }
       });
     }

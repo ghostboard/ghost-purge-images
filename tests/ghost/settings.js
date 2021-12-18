@@ -1,3 +1,4 @@
+require('dotenv').config();
 const expect = require('chai').expect;
 const Settings = require('../../lib/ghost/settings');
 

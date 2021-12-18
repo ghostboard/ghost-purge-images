@@ -1,4 +1,4 @@
-require('dotenv').config()
+require('dotenv').config();
 const expect = require('chai').expect;
 const Authors = require('../../lib/ghost/authors');
 

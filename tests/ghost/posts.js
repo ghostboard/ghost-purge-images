@@ -1,3 +1,4 @@
+require('dotenv').config();
 const expect = require('chai').expect;
 const auth = require('../../lib/ghost/auth');
 const Posts = require('../../lib/ghost/posts');
@@ -190,6 +191,25 @@ describe('lib/ghost/posts', () => {
           expect(output[0]).to.be.have.property('feature_image');
           expect(output[0]).to.be.have.property('og_image');
           expect(output[0]).to.be.have.property('twitter_image');
+        }
+      });
+
+      it('should get the mobiledoc property that contains video & audio cards', async () => {
+        let error;
+        let output;
+        try {
+          const input = {
+            url: process.env.TEST_BASE_URL,
+            authToken: auth.getToken(process.env.TEST_ADMIN_API_KEY)
+          };
+          output = await Posts.list(input);
+        } catch (err) {
+          error = err;
+        } finally {
+          expect(error).to.be.undefined;
+          expect(output).to.be.an('array');
+          expect(output.length).to.be.greaterThan(0);
+          expect(output[0]).to.be.have.property('mobiledoc');
         }
       });
     }
