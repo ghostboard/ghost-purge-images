@@ -16,7 +16,7 @@ describe('lib/ghost/uploads', () => {
       let error;
       let output;
       try {
-        output = await Uploads.list('tests');
+        output = await Uploads.list(['tests']);
       } catch (err) {
         error = err;
       } finally {

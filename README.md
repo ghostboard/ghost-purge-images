@@ -86,6 +86,13 @@ Example: `... --url=https://yourblog.com/`
 
 You can change it with the optional param `... --images-path=your/custom/path/here`
 
+- ### `media-path`
+
+💡 The **default media path** is `content/media`
+
+You can change it with the optional param `... --media-path=your/custom/path/here`
+
+
 ## 🎯 Troubleshooting
 
 ### Error: EACCES: permission denied, unlink ANY_FILE_PATH
