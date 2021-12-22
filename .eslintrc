@@ -1,5 +1,16 @@
 {
-  "extends": "airbnb",
+  "extends": ["airbnb"],
+  "env": {
+    "mocha": true
+  },
+  "overrides": [
+    {
+      "files": ["./tests/**/*.js"],
+      "rules": {
+        "no-unused-expressions": "off"
+      }
+    }
+  ],
   "rules": {
     "no-multi-spaces": 0,
     "no-underscore-dangle": [0],
@@ -15,7 +26,6 @@
     "newline-per-chained-call": [2, { "ignoreChainWithDepth": 5 }],
     "space-in-parens": 0,
     "key-spacing": 0,
-    "no-unused-vars": [2, { "vars": "all", "args": "none" }],
     "max-len": 1,
     "padded-blocks": 0,
     "no-console": 0,
@@ -23,7 +33,15 @@
     "import/no-extraneous-dependencies": 0,
     "import/newline-after-import": 0,
     "no-mixed-operators": 0,
-    "allowForLoopAfterthoughts": true,
-    "prefer-destructuring": ["error", {"object": false, "array": true}]
+    "allowForLoopAfterthoughts": 1,
+    "prefer-destructuring": ["error", {"object": false, "array": true}],
+    "no-unused-vars": [
+      2,
+      {
+        "vars": "all",
+        "args": "none",
+        "varsIgnorePattern": "should|expect"
+      }
+    ]
   }
 }

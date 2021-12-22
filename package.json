@@ -1,10 +1,10 @@
 {
   "private": false,
   "name": "ghost-purge-images",
-  "description": "",
+  "description": "Display or clean unused uploaded files: images, documents, audio, video & thumbnail files of your Ghost blog",
   "version": "3.2.0",
   "author": {
-    "name": "David",
+    "name": "David Burgos",
     "email": "support+github@ghostboard.io"
   },
   "license": "MIT",
@@ -32,9 +32,6 @@
     "dotenv": "^10.0.0",
     "eslint": "^8.5.0",
     "eslint-config-airbnb": "^19.0.2",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-react": "^7.27.1",
     "mocha": "^9.1.3"
   }
 }

@@ -1,6 +1,6 @@
 # ghost-purge-images
 
-Display or clean unused uploaded images, audio and video files of your Ghost blog
+Display or clean unused uploaded files: images, documents, audio, video & thumbnail files of your Ghost blog
 
 ## 👻 Ghost versions
 

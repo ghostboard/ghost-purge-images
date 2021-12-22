@@ -38,10 +38,10 @@ describe('lib/ghost/posts', () => {
       let output;
       try {
         const posts = [
-          { feature_image: '/uploads/same_image.jpg' }
+          { feature_image: '/content/images/same_image.jpg' }
         ];
         const upload = {
-          path: 'content/images/same_image.jpg'
+          path: 'uploads/content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -57,10 +57,10 @@ describe('lib/ghost/posts', () => {
       let output;
       try {
         const posts = [
-          { og_image: '/uploads/same_image.jpg' }
+          { og_image: '/content/images/same_image.jpg' }
         ];
         const upload = {
-          path: 'content/images/same_image.jpg'
+          path: 'uploads/content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
@@ -76,10 +76,10 @@ describe('lib/ghost/posts', () => {
       let output;
       try {
         const posts = [
-          { twitter_image: '/uploads/same_image.jpg' }
+          { twitter_image: '/content/images/same_image.jpg' }
         ];
         const upload = {
-          path: 'content/images/same_image.jpg'
+          path: '/uploads/content/images/same_image.jpg'
         };
         output = Posts.isBeingUsed(upload, posts);
       } catch (err) {
