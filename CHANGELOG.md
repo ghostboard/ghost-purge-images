@@ -1,5 +1,10 @@
 # 📋 Changelog
 
+## 3.2.1
+
+- Add support for file & image card #31
+- Refactor to improve speed
+
 ## v3.2.0
 
 - Add support for audio & video card files #31
