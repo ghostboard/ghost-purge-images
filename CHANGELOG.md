@@ -3,6 +3,7 @@
 ## 3.2.1
 
 - Add support for file & image card #31
+- Add support for video thumbnails
 - Refactor to improve speed
 
 ## v3.2.0
