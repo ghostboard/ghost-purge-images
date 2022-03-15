@@ -1,5 +1,9 @@
 # 📋 Changelog
 
+## 3.2.2
+
+- Update dependencies
+
 ## 3.2.1
 
 - Add support for file & image card #31
