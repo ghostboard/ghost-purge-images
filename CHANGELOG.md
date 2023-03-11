@@ -1,5 +1,10 @@
 # 📋 Changelog
 
+## 3.2.3
+
+- Add versions compatibility table to README
+- Update dependencies
+
 ## 3.2.2
 
 - Update dependencies
