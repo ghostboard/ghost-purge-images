@@ -1,5 +1,10 @@
 # 📋 Changelog
 
+## 3.2.4
+
+- Exclude `images/size` folder
+- Update dependencies
+
 ## 3.2.3
 
 - Add versions compatibility table to README
