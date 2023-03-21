@@ -27,6 +27,25 @@ describe('lib/ghost/uploads', () => {
         expect(output[0]).to.have.property('size');
       }
     });
+
+		it('should exclude the images/size folder', async () => {
+		  let error;
+		  let output;
+		  try {
+			  output = await Uploads.list(['tests/ghost/images']);
+		  } catch (err) {
+			  error = err;
+		  } finally {
+			  expect(error).to.be.undefined;
+			  expect(typeof output === 'object').to.equal(true);
+			  expect(output.length).to.be.an('number');
+			  expect(output[0]).to.have.property('path');
+			  expect(output[0]).to.have.property('size');
+				output.map((item) => {
+					expect(item.path.includes('images/size')).eq(false);
+				});
+		  }
+	  });
   });
 
   describe('remove()', () => {
