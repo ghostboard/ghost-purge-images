@@ -94,6 +94,14 @@ You can change it with the optional param `... --images-path=your/custom/path/he
 
 You can change it with the optional param `... --media-path=your/custom/path/here`
 
+- ### `exclude-ext`
+
+💡 No **default value**, all extensions are included
+
+You can exclude one or more file extensions. Examples:
+  - Excluding `.webp` files, adding the optional param `... --exclude-ext=webp`
+  - Excluding `.jpg` and `.gif` files (add a comma), adding the optional param `... --exclude-ext=jpg,gif`
+
 
 ## 🎯 Troubleshooting
 

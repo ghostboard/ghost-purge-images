@@ -1,5 +1,9 @@
 # 📋 Changelog
 
+## 3.3.0
+
+- Add exclude-ext optional param for excluding file extensions
+
 ## 3.2.4
 
 - Exclude `images/size` folder

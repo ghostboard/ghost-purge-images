@@ -46,6 +46,58 @@ describe('lib/ghost/uploads', () => {
 				});
 		  }
 	  });
+
+	  it('should exclude the .webp files', async () => {
+		  let error;
+		  let output;
+			const EXCLUDED_EXTENSIONS = ['webp'];
+		  try {
+			  output = await Uploads.list(['tests/ghost/images'], EXCLUDED_EXTENSIONS);
+		  } catch (err) {
+			  error = err;
+		  } finally {
+			  expect(error).to.be.undefined;
+			  output.map((item) => {
+				  expect(item.path.includes(EXCLUDED_EXTENSIONS[0])).eq(false);
+			  });
+		  }
+	  });
+
+	  it('should exclude more than 1 extension casting from string', async () => {
+		  let error;
+		  let output;
+		  const EXCLUDED_EXTENSIONS = 'jpg,webp';
+		  try {
+			  output = await Uploads.list(['tests/ghost/images'], EXCLUDED_EXTENSIONS);
+		  } catch (err) {
+			  error = err;
+		  } finally {
+			  expect(error).to.be.undefined;
+			  output.map((item) => {
+				  EXCLUDED_EXTENSIONS.forEach((extension) => {
+					  expect(item.path.includes(extension)).eq(false);
+				  });
+			  });
+		  }
+	  });
+
+	  it('should exclude more than 1 extension', async () => {
+		  let error;
+		  let output;
+		  const EXCLUDED_EXTENSIONS = ['jpg', 'webp'];
+		  try {
+			  output = await Uploads.list(['tests/ghost/images'], EXCLUDED_EXTENSIONS);
+		  } catch (err) {
+			  error = err;
+		  } finally {
+			  expect(error).to.be.undefined;
+			  output.map((item) => {
+				  EXCLUDED_EXTENSIONS.forEach((extension) => {
+					  expect(item.path.includes(extension)).eq(false);
+				  });
+			  });
+		  }
+	  });
   });
 
   describe('remove()', () => {
