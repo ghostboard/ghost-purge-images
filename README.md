@@ -81,7 +81,7 @@ Delete all the unused files.
 💡 If you don't have necessary permissions to delete files, running `purge` may cause errors.
 
 You can allow the command to handle this for you.
-  - In `purge`, updates permissions to allow file deletion, and then reverts back to [production-ready permissions](https://github.com/TryGhost/Ghost-CLI/blob/main/lib/commands/doctor/checks/check-permissions.js) after purge is complete. *Note that this requires `sudo`, and restoring permissions may take a long time on large sites.*
+  - In `purge`, updates permissions to allow file deletion, and then reverts back to [production-ready permissions](https://github.com/TryGhost/Ghost-CLI/blob/main/lib/commands/doctor/checks/check-permissions.js) after purge is complete. *Note that this requires `sudo`, and restoring permissions may take a long time even on small sites.*
   - In `display`, shows the file statuses as if permissions were already fixed.
 
 For backward compatibility, permissions are **not automatically fixed**. You can enable it with the flag `... --fix-permissions`
