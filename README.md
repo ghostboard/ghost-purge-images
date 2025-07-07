@@ -78,7 +78,7 @@ Delete all the unused files.
 
 - ### `--fix-permissions`
 
-💡 If you don't have necessary permissions to delete files, running `purge` may cause errors.
+💡 If you don't have necessary permissions to delete files, running `purge` may cause errors, such as `Error: EACCES: permission denied, unlink ANY_FILE_PATH`.
 
 You can allow the command to handle this for you.
   - In `purge`, updates permissions to allow file deletion, and then reverts back to [production-ready permissions](https://github.com/TryGhost/Ghost-CLI/blob/main/lib/commands/doctor/checks/check-permissions.js) after purge is complete. *Note that this requires `sudo`, and restoring permissions may take a long time even on small sites.*
