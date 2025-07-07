@@ -57,7 +57,7 @@ Login into your server via ssh:
 ## ⚡️ Commands
 ### `display`
 
-Print the list of all uploaded images that currently are not being used in any post, page or metadata
+Print the list of all uploaded images that currently are not being used in any post, page or metadata. Attempts to predict any errors before running `purge`.
 
 - Example: `ghost-purge-images display --content-key=YOUR_CONTENT_KEY --admin-key=YOUR_ADMIN_KEY`
 
@@ -75,6 +75,16 @@ Delete all the unused files.
 ![ghost-purge-images purge screenshot](https://user-images.githubusercontent.com/1589874/51084808-73ca0800-1730-11e9-8c2a-a3b43551fbaa.png)
 
 ## 🧩 Optional Params
+
+- ### `--fix-permissions`
+
+💡 If you don't have necessary permissions to delete files, running `purge` may cause errors.
+
+You can allow the command to handle this for you.
+  - In `purge`, updates permissions to allow file deletion, and then reverts back to [production-ready permissions](https://github.com/TryGhost/Ghost-CLI/blob/main/lib/commands/doctor/checks/check-permissions.js) after purge is complete. *Note that this requires `sudo`, and restoring permissions may take a long time on large sites.*
+  - In `display`, shows the file statuses as if permissions were already fixed.
+
+For backward compatibility, permissions are **not automatically fixed**. You can enable it with the flag `... --fix-permissions`
 
 - ### `url`
 
@@ -101,14 +111,6 @@ You can change it with the optional param `... --media-path=your/custom/path/her
 You can exclude one or more file extensions. Examples:
   - Excluding `.webp` files, adding the optional param `... --exclude-ext=webp`
   - Excluding `.jpg` and `.gif` files (add a comma), adding the optional param `... --exclude-ext=jpg,gif`
-
-
-## 🎯 Troubleshooting
-
-### Error: EACCES: permission denied, unlink ANY_FILE_PATH
-Permissions issue on your server, try to run in your Ghost folder:
-
-`sudo chmod -R a+rw content`
 
 ## 📋 Changelog
 See [CHANGELOG.md](https://github.com/ghostboard/ghost-purge-images/blob/master/CHANGELOG.md)
