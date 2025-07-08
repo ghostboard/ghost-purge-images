@@ -119,6 +119,7 @@ See [CHANGELOG.md](https://github.com/ghostboard/ghost-purge-images/blob/master/
 David Burgos from [Ghostboard.io](https://ghostboard.io)
 
 ## 👏 Contributors
+- [scottleechua](https://github.com/ghostboard/ghost-purge-images/pull/43)
 - [mesquka](https://github.com/mesquka/ghost-purge-images-customdir/commits?author=mesquka)
 
 ## ✒️ License
