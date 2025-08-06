@@ -6,12 +6,13 @@ Display or clean unused uploaded files: images, documents, audio, video & thumbn
 
 Which Ghost version are you running?
 
-| Ghost version | ghost-purge-images version | How to install                                 |
-|---------------|----------------------------|------------------------------------------------|
-| `3, 4, 5`       | latest                     | `npm install -g ghost-purge-images`            |
-| `>= 2.16`       | `2.1.1`                      | `npm install -g ghost-purge-images@2.1.1`      |
-| `<= 2.15.x`     | `2.0.3`                      | `npm install -g ghost-purge-images@2.0.3`      |
-| `0.7.2 - 1.x`   | `1.0.0`                      | `npm install -g ghost-purge-images@1.0.0` |
+| Ghost version | ghost-purge-images version | How to install                            |
+|---------------|----------------------------|-------------------------------------------|
+| `6`           | latest                     | `npm install -g ghost-purge-images`       |
+| `3, 4, 5`     | `3.4.0`                    | `npm install -g ghost-purge-images@3.4.0` |
+| `>= 2.16`     | `2.1.1`                    | `npm install -g ghost-purge-images@2.1.1` |
+| `<= 2.15.x`   | `2.0.3`                    | `npm install -g ghost-purge-images@2.0.3` |
+| `0.7.2 - 1.x` | `1.0.0`                    | `npm install -g ghost-purge-images@1.0.0` |
 
 ## ✨ Update to the last version
 

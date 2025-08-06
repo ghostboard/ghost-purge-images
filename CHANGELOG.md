@@ -1,5 +1,18 @@
 # 📋 Changelog
 
+## 4.0.0
+
+- Added support for Ghost 6 and Node.js 22
+- Updated dependencies
+
+## 3.4.0
+
+Thanks to [Scott Lee](https://github.com/ghostboard/ghost-purge-images/pull/43):
+
+- Added `--fix-permissions` flag
+- Improved README
+- Updated dependencies
+
 ## 3.3.0
 
 - Add exclude-ext optional param for excluding file extensions
